@@ -1,0 +1,22 @@
+{
+  "word_patterns": {
+    "ASPIRIN": 2,
+    "PARACETAMOL": 2,
+    "IBUPROFEN": 1,
+    "AMOXICILLIN": 1
+  },
+  "position_patterns": {
+    "middle": 1,
+    "end": 1
+  },
+  "context_patterns": {
+    "before:was": 1,
+    "before:prescribed": 1,
+    "after:75mg": 1,
+    "after:tablets": 1,
+    "before:tablets": 1,
+    "before:and": 1,
+    "after:500mg": 1,
+    "after:for": 1
+  }
+}

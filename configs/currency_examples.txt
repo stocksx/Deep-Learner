@@ -1,0 +1,7 @@
+# Validated examples for currency
+# Format: original_text|normalized_form
+
+USD|US DOLLAR
+EUR|EURO
+INR|INDIAN RUPEE
+GBP|BRITISH POUND

@@ -1,0 +1,25 @@
+{
+  "indicators": [
+    "TABLET",
+    "CAPSULE",
+    "SYRUP",
+    "INJECTION",
+    "MEDICINE"
+  ],
+  "suffixes": [
+    "MG",
+    "ML",
+    "TABS",
+    "CAP"
+  ],
+  "known_entities": [
+    "ASPIRIN",
+    "PARACETAMOL",
+    "IBUPROFEN"
+  ],
+  "weights": {
+    "indicators": 0.3,
+    "suffixes": 0.2,
+    "known_entities": 0.5
+  }
+}

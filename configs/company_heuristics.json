@@ -1,0 +1,45 @@
+{
+  "indicators": [
+    "INDUSTRIES",
+    "CORPORATION",
+    "BANK",
+    "FINANCE",
+    "CONSULTANCY",
+    "SERVICES",
+    "PHARMA",
+    "PHARMACEUTICAL",
+    "TECHNOLOGIES",
+    "SOLUTIONS"
+  ],
+  "suffixes": [
+    "LTD",
+    "LIMITED",
+    "INC",
+    "CORP",
+    "CO",
+    "COMPANY",
+    "PVT",
+    "PRIVATE"
+  ],
+  "known_entities": [
+    "RELIANCE",
+    "TCS",
+    "INFOSYS",
+    "HDFC",
+    "ICICI",
+    "SBI",
+    "WIPRO",
+    "UNILEVER",
+    "BAJAJ",
+    "MARUTI",
+    "BHARTI",
+    "AIRTEL",
+    "LARSEN",
+    "TOUBRO"
+  ],
+  "weights": {
+    "indicators": 0.3,
+    "suffixes": 0.4,
+    "known_entities": 0.5
+  }
+} 

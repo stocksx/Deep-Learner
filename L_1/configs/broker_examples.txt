@@ -1,0 +1,8 @@
+# Validated examples for broker
+# Format: original_text|normalized_form
+
+ZERODHA
+HDFC SECURITIES
+ICICI DIRECT
+KOTAK SECURITIES
+Angel Broking Limited|ANGEL BROKING LIMITED

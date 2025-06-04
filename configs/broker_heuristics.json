@@ -1,0 +1,46 @@
+{
+  "indicators": [
+    "SECURITIES",
+    "BROKING",
+    "CAPITAL",
+    "INVESTMENTS",
+    "FINANCIAL",
+    "TRADING",
+    "WEALTH",
+    "ADVISORS",
+    "DIRECT",
+    "MARKETS"
+  ],
+  "suffixes": [
+    "LTD",
+    "LIMITED",
+    "PVT",
+    "PRIVATE",
+    "INC",
+    "CORP",
+    "SECURITIES"
+  ],
+  "known_entities": [
+    "ZERODHA",
+    "UPSTOX",
+    "ANGEL",
+    "HDFC",
+    "ICICI",
+    "KOTAK",
+    "SHAREKHAN",
+    "SBI",
+    "AXIS",
+    "GROWW",
+    "5PAISA",
+    "MOTILAL",
+    "EDELWEISS",
+    "IIFL",
+    "ALICE",
+    "FYERS"
+  ],
+  "weights": {
+    "indicators": 0.4,
+    "suffixes": 0.3,
+    "known_entities": 0.5
+  }
+} 

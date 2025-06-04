@@ -1,0 +1,7 @@
+# Validated examples for drug
+# Format: original_text|normalized_form
+
+Aspirin|ASPIRIN
+Paracetamol|PARACETAMOL
+Ibuprofen|IBUPROFEN
+Amoxicillin|AMOXICILLIN

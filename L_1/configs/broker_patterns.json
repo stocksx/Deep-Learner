@@ -1,0 +1,45 @@
+{
+  "word_patterns": {
+    "ZERODHA": 2,
+    "HDFC": 2,
+    "SECURITIES": 4,
+    "ICICI": 2,
+    "DIRECT": 2,
+    "KOTAK": 2,
+    "ANGEL": 2,
+    "BROKING": 2,
+    "LIMITED": 2
+  },
+  "position_patterns": {
+    "end": 4,
+    "beginning": 4,
+    "middle": 2
+  },
+  "context_patterns": {
+    "before:account": 1,
+    "before:with": 1,
+    "after:for": 2,
+    "after:equity": 1,
+    "after:provides": 1,
+    "after:discount": 1,
+    "after:offers": 1,
+    "after:comprehensive": 1,
+    "before:managed": 1,
+    "before:through": 1,
+    "after:platform": 1,
+    "before:provided": 1,
+    "before:by": 2,
+    "before:funds": 1,
+    "before:to": 1,
+    "after:investment": 1,
+    "after:executed": 1,
+    "after:the": 1,
+    "before:charged": 1,
+    "after:was": 1,
+    "after:competitive": 1,
+    "after:assisted": 1,
+    "after:with": 1,
+    "before:confirmation": 1,
+    "before:from": 1
+  }
+}

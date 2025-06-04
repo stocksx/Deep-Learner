@@ -1,0 +1,24 @@
+{
+  "word_patterns": {
+    "USD": 2,
+    "EUR": 2,
+    "INR": 2,
+    "GBP": 1
+  },
+  "position_patterns": {
+    "middle": 1,
+    "end": 1,
+    "beginning": 1
+  },
+  "context_patterns": {
+    "before:portfolio": 1,
+    "before:includes": 1,
+    "after:investments": 1,
+    "after:and": 1,
+    "before:investments": 1,
+    "before:and": 1,
+    "after:bonds": 1,
+    "after:deposits": 1,
+    "after:provide": 1
+  }
+}

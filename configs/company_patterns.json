@@ -1,0 +1,47 @@
+{
+  "word_patterns": {
+    "RELIANCE": 2,
+    "INDUSTRIES": 2,
+    "LTD": 1,
+    "TCS": 2,
+    "LIMITED": 8,
+    "INFOSYS": 2,
+    "HDFC": 1,
+    "BANK": 2,
+    "ICICI": 1,
+    "SBI": 1,
+    "WIPRO": 1,
+    "HINDUSTAN": 1,
+    "UNILEVER": 1,
+    "BAJAJ": 1,
+    "FINANCE": 1,
+    "ASIAN": 1,
+    "PAINTS": 1,
+    "MARUTI": 1,
+    "SUZUKI": 1,
+    "BHARTI": 1,
+    "AIRTEL": 1,
+    "ITC": 1,
+    "LARSEN": 1,
+    "TOUBRO": 1,
+    "SUN": 1,
+    "PHARMA": 1
+  },
+  "position_patterns": {
+    "end": 1,
+    "middle": 2
+  },
+  "context_patterns": {
+    "before:support": 1,
+    "before:from": 1,
+    "after:team": 1,
+    "before:collaborated": 1,
+    "before:with": 1,
+    "after:for": 1,
+    "after:technology": 1,
+    "before:securities": 1,
+    "before:and": 1,
+    "after:announced": 1,
+    "after:a": 1
+  }
+}
