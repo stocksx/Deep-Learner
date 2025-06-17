@@ -32,29 +32,29 @@ python3 api_server.py --host 0.0.0.0 --port 8080 --reload
 
 ### Core Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/` | API information |
-| `GET` | `/health` | Health check |
-| `GET` | `/info` | System information |
+| Method  | Endpoint    | Description        |
+| ------- | ----------- | ------------------ |
+| `GET` | `/`       | API information    |
+| `GET` | `/health` | Health check       |
+| `GET` | `/info`   | System information |
 
 ### Training & Chunking
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/train` | Train entity patterns from text |
-| `POST` | `/chunk` | Chunk text using learned patterns |
+| Method   | Endpoint            | Description                          |
+| -------- | ------------------- | ------------------------------------ |
+| `POST` | `/train`          | Train entity patterns from text      |
+| `POST` | `/chunk`          | Chunk text using learned patterns    |
 | `POST` | `/chunk/semantic` | Semantic chunking using transformers |
 
 ### Configuration Management
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/configure` | Configure new entity type |
-| `GET` | `/entity-types` | List available entity types |
-| `GET` | `/entity-types/{type}/info` | Get entity type details |
-| `DELETE` | `/entity-types/{type}` | Delete entity type |
-| `POST` | `/clear-cache` | Clear all cached data |
+| Method     | Endpoint                      | Description                 |
+| ---------- | ----------------------------- | --------------------------- |
+| `POST`   | `/configure`                | Configure new entity type   |
+| `GET`    | `/entity-types`             | List available entity types |
+| `GET`    | `/entity-types/{type}/info` | Get entity type details     |
+| `DELETE` | `/entity-types/{type}`      | Delete entity type          |
+| `POST`   | `/clear-cache`              | Clear all cached data       |
 
 ## 🔧 Usage Examples
 
@@ -73,6 +73,7 @@ curl -X POST "http://127.0.0.1:8000/train" \
 ```
 
 Response:
+
 ```json
 {
   "success": true,
@@ -102,6 +103,7 @@ curl -X POST "http://127.0.0.1:8000/chunk" \
 ```
 
 Response:
+
 ```json
 {
   "success": true,
@@ -244,21 +246,25 @@ configs/
 ## ⚡ Features
 
 ### Intelligent Caching
+
 - Learners and chunkers are cached for performance
 - Automatic cache invalidation when configurations change
 - Memory-efficient pattern storage
 
 ### Pattern Persistence
+
 - Learned patterns automatically saved to configuration files
 - Patterns loaded on server startup
 - Hot-reloading of configurations
 
 ### Multi-Entity Support
+
 - Train multiple entity types simultaneously
 - Combine entity types in chunking requests
 - Cross-entity pattern analysis
 
 ### Quality Metrics
+
 - Chunking boundary quality scores
 - Entity detection confidence levels
 - Comprehensive statistics reporting
@@ -278,6 +284,7 @@ curl http://127.0.0.1:8000/info
 ```
 
 Returns:
+
 - Available entity types
 - Configuration file status
 - Loaded learners count
@@ -290,6 +297,7 @@ curl http://127.0.0.1:8000/entity-types/broker/info
 ```
 
 Returns detailed information about a specific entity type including:
+
 - Number of examples
 - Pattern counts
 - Heuristics configuration
@@ -306,6 +314,7 @@ The API provides detailed error responses:
 ```
 
 Common error codes:
+
 - `400`: Bad Request (invalid parameters)
 - `404`: Not Found (entity type doesn't exist)
 - `500`: Internal Server Error (system failure)
@@ -351,11 +360,13 @@ python3 api_server.py
 ## 📦 Dependencies
 
 Core dependencies:
+
 - `fastapi>=0.68.0` - Web framework
 - `uvicorn>=0.15.0` - ASGI server
 - `pydantic>=1.8.0` - Data validation
 
 Optional dependencies:
+
 - `sentence-transformers>=2.0.0` - For semantic chunking
 - `nltk>=3.6.0` - For sentence tokenization
 
@@ -390,6 +401,7 @@ gunicorn api_server:app -w 4 -k uvicorn.workers.UvicornWorker
 ### Benchmarks
 
 Typical performance on modern hardware:
+
 - Training: ~100ms per paragraph
 - Chunking: ~50ms per 1KB text
 - Pattern matching: ~10ms per sentence
@@ -406,6 +418,7 @@ Typical performance on modern hardware:
 ### Common Issues
 
 **Server won't start:**
+
 ```bash
 # Check port availability
 lsof -i :8000
@@ -415,12 +428,14 @@ pip install -r requirements.txt
 ```
 
 **Semantic chunking fails:**
+
 ```bash
 # Install optional dependencies
 pip install sentence-transformers nltk
 ```
 
 **Configuration errors:**
+
 ```bash
 # Check configuration directory permissions
 ls -la configs/
@@ -431,15 +446,11 @@ python3 -m json.tool configs/broker_heuristics.json
 
 ## 📝 License
 
-This project is part of the Deep-Learner pattern-based learning system.
+MIT 
 
-## 🤝 Contributing
+🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Add tests for new functionality
 4. Submit a pull request
-
----
-
-**Happy Pattern Learning! 🎯** 
