@@ -393,18 +393,12 @@ for i, chunk in enumerate(chunks):
 - **Easy Integration**: Simple API and Python library
 - **Performance Optimized**: Caching and efficient algorithms
 
-### For Data Scientists
+### For AI-Based APP
 
 - **Quality Metrics**: Comprehensive chunking statistics
 - **Pattern Insights**: Understand entity detection patterns
 - **Configurable Heuristics**: Fine-tune detection rules
 - **Reproducible Results**: Version-controlled configurations
-
-### For Production Systems
-
-- **Scalable Architecture**: Handle high-volume text processing
-- **Monitoring & Health Checks**: Production-ready observability
-- **Error Handling**: Robust error recovery and reporting
 
 ## Conclusion
 
