@@ -6,25 +6,25 @@ A comprehensive, configurable system for learning entity patterns from text data
 
 ### Core Components
 
-1. **ConfigurableBootstrapper** (`L1_learner.py`)
+1. **ConfigurableBootstrapper** 
 
    - Learns patterns from text data
    - Loads configuration from external files
    - Supports any entity type through configuration
    - Saves/loads learned patterns automatically
-2. **PatternBasedChunker** (`L1_learner.py`)
-
+   - 
+2. **PatternBasedChunker** 
    - Intelligent text chunking using learned patterns
    - Preserves all information while optimizing for LLM processing
    - Multi-entity support with confidence scoring
    - Quality metrics and boundary analysis
-3. **LLM_Chunker** (`L1_learner.py`)
+3. **LLM_Chunker** 
 
    - Semantic chunking using sentence transformers
    - Similarity-based text segmentation
    - Complementary to pattern-based chunking
-4. **FastAPI Server** (`api_server.py`)
-
+   - 
+4. **FastAPI Server**
    - REST API endpoints for training and chunking
    - Configuration management via API
    - Caching and performance optimization
